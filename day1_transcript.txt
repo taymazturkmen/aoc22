@@ -1,0 +1,61 @@
+User: give me a code that can read from input.txt , separate each number group between new lines and sums up the all number in each group then prints the biggest sum of all of the groups
+
+Assistant: Certainly! Here is a Python code that should accomplish this task:
+
+Copy code
+# Open the input file in read mode
+with open('input.txt', 'r') as file:
+    # Initialize a variable to store the maximum sum
+    max_sum = 0
+
+    # Iterate over the lines in the file
+    for line in file:
+        # Split the line into a list of numbers
+        numbers = [int(x) for x in line.split()]
+        # Calculate the sum of the numbers
+        total = sum(numbers)
+        # Update the maximum sum if necessary
+        max_sum = max(max_sum, total)
+
+    # Print the maximum sum
+    print(max_sum)
+This code assumes that the input file is formatted such that each group of numbers is separated by a new line, and that each number within a group is separated by a space.
+
+User: no the number groups should look like this
+1
+2
+3
+
+99
+100
+101
+
+Assistant: In that case, you can modify the code as follows to handle the different formatting of the input file:
+
+Copy code
+# Open the input file in read mode
+with open('input.txt', 'r') as file:
+    # Initialize a variable to store the maximum sum
+    max_sum = 0
+
+    # Initialize a variable to store the current sum
+    current_sum = 0
+
+    # Iterate over the lines in the file
+    for line in file:
+        # If the line is a number, add it to the current sum
+        if line.strip().isdigit():
+            current_sum += int(line.strip())
+        # If the line is blank, update the maximum sum and reset the current sum
+        else:
+            max_sum = max(max_sum, current_sum)
+            current_sum = 0
+
+    # Update the maximum sum one last time after reading the entire file
+    max_sum = max(max_sum, current_sum)
+
+    # Print the maximum sum
+    print(max_sum)
+This code assumes that each group of numbers is separated by a blank line, and that each number within a group is on its own line.
+
+User: can you output this conversation in a way that i can copy , thanks bot
