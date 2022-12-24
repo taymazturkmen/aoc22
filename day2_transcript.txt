@@ -1,0 +1,31 @@
+User: hi assistant , give me a piece of code that reads from a file 'input.txt' line by line. In every line there are two characters separated by a space. If the second character is X add 1 , if Y add 2 and if Z add 3 to a sum character. X beats C , and is draw with an A . Y beats A and is draw with B. Z is draw to C and beats B. Winning adds  6 pts and being draw adds 3pts to your score. After all program prints out the score for the second player aka secon char
+
+Assistant: Certainly! Here is a piece of code that reads from a file `input.txt` line by line and performs the actions you described:
+
+score = 0
+
+with open('input.txt') as f:
+    for line in f:
+        first_char, second_char = line.strip().split()
+        if second_char == 'X':
+            score += 1
+        elif second_char == 'Y':
+            score += 2
+        elif second_char == 'Z':
+            score += 3
+        if second_char == 'X' and first_char == 'C':
+            score += 6
+        elif second_char == 'Y' and first_char == 'A':
+            score += 6
+        elif second_char == 'Z' and first_char == 'B':
+            score += 6
+        elif second_char == 'X' and first_char == 'A':
+            score += 3
+        elif second_char == 'Y' and first_char == 'B':
+            score += 3
+        elif second_char == 'Z' and first_char == 'C':
+            score += 3
+
+print(f"The score for the second player is {score}.")
+
+I hope this helps! Let me know if you have any questions.
