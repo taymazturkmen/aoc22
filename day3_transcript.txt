@@ -1,0 +1,32 @@
+hi assistant give me piece of code that reads from 'input.txt' line by line and divides each line in half and compares the halves. For each character that are equal in first and second part (lower and upper case matters) if its between a-z add the corresponding value between 1 and 26 ,if the character is between A-Z do the same for 27 between 52 and print out the sum value in the end.
+now tell me whats the output for 
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+you still havent told me the sum
+which value did you add for the first line of my example
+no only value added  should be for char 'p' , you should compare to halves to each other , J does not count because its only in first part twice
+now calculate this again , 
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+tell me only the sum value
+i think you  did the same mistake again , compare halves to eachother correctly
+which value do you add is the same char is 'L'
+L should have the value 38 because its between A to Z and corresponidng value between 27 to 52 is 38
+now tell me only the sum variable for the example:
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+you did print out the code again , i said only tell me the sum , and your sum is wrong. For capital letters the value should be between 27 and 52. For ex while a has the value 1 , A has the value 27
+WHY YOU KEEP PRINTING OUT THE CODE JUST TELL ME THE OUTPUT OF SUM VARIABLE
+DONT PRINT OUT THE CODE IF I TELL
